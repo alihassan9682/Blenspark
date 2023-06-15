@@ -8,7 +8,7 @@ const Header = () => {
     <Container bar={bar} className='opacity-100'>
         <Logo>
             <span className='green'><GiCandleFlame/></span>
-            <h1>BlenSpark</h1>
+            <h1>BlenSpark123</h1>
         </Logo>
         <Nav bar={bar} className='text-xl font-bold'>
             <span><a href="#home">Home</a></span>
