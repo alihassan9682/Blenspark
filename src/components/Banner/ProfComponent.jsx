@@ -5,24 +5,28 @@ import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 
+
 const ProfComponent = () => {
   return (
-    <Container id="home">
-      <Slide direction="left">
+    <Container id="home" className=''>
+      <Slide direction="down" className="w-[90%]">
         <Texts>
-          <h4>
-            Hello <span className="green">I'am</span>
-          </h4>
-          <h1 className="green">BlenSpark</h1>
-          <h3>UX/UI Designer and graphic designer</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            iusto. Adipisci in qui officia provident tenetur sequi, deserunt
-            corporis quos?
+          <div className="text-4xl mt-8">
+            Hello <span className="green">We are</span>
+          </div>
+          <div className="green text-8xl font-bold mt-2 mb-2">BlenSpark</div>
+          <h3>3D Visualization Services Providers</h3>
+          <p className="font-sans text-2xl mt-4 ">
+            Blenspark is a leading provider of cutting-edge 3D visualization
+            services. Our company specializes in transforming ideas and concepts
+            into stunning, realistic visual representations. With a team of
+            skilled designers and state-of-the-art technology, we bring designs
+            to life, allowing clients to visualize their projects in a
+            captivating and immersive manner.
           </p>
-          <button>Let's talk</button>
+          <button><div className="font-bold text-xl"> Let's talk</div></button>
           <Social>
-            <p>Check out my</p>
+            <div className="text-2xl">Visit our sites</div>
             <div className="social-icons">
               <span>
                 <a href="/">
@@ -43,14 +47,6 @@ const ProfComponent = () => {
           </Social>
         </Texts>
       </Slide>
-      <Slide direction="right">
-        <Profile>
-          <img
-            src="https://res.cloudinary.com/ghazni/image/upload/v1659082282/Yt-portfolio/Untitled-1_drcspz.png"
-            alt="profile"
-          />
-        </Profile>
-      </Slide>
     </Container>
   );
 };
@@ -68,7 +64,7 @@ const Container = styled.div`
   @media (max-width: 840px) {
     width: 90%;
   }
-
+  height:100vh;
   @media (max-width: 640px) {
     flex-direction: column;
   }

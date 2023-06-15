@@ -6,28 +6,29 @@ import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
 
+
 const Services = () => {
   return (
     <Container id="service">
       <Slide direction="down">
-        <h4>
-          My <span className="green">services</span>
-        </h4>
-        <h1>What I Do</h1>
+        <p className="text-4xl">
+          Our <span className="green">services</span>
+        </p>
       </Slide>
       <Cards>
         <Slide direction="left">
           <Card
             Icon={MdDesignServices}
-            title={"ui/ux designer"}
+            title={"3D Product Designs"}
             disc={`Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
           />
+          
         </Slide>
         <Slide direction="up">
           <Card
             Icon={FiCodesandbox}
-            title={"graphic designer"}
+            title={"3D Architechural Designs"}
             disc={`Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
           />
@@ -35,7 +36,31 @@ const Services = () => {
         <Slide direction="right">
           <Card
             Icon={CgWebsite}
-            title={"web designer"}
+            title={"3D Character Designs"}
+            disc={`Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+          />
+        </Slide>
+        <Slide direction="left">
+          <Card
+            Icon={MdDesignServices}
+            title={"3D Furniture Designs"}
+            disc={`Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+          />
+        </Slide>
+        <Slide direction="up">
+          <Card
+            Icon={FiCodesandbox}
+            title={"3D Explainer Videos"}
+            disc={`Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+          />
+        </Slide>
+        <Slide direction="right">
+          <Card
+            Icon={CgWebsite}
+            title={"3D Realistic Advertisements"}
             disc={`Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
           />
@@ -55,7 +80,6 @@ const Container = styled.div`
   @media (max-width: 840px) {
     width: 90%;
   }
-
   h1 {
     padding-top: 1rem;
   }

@@ -1,13 +1,14 @@
 import React from 'react'
 import styled from 'styled-components';
+import header from "/home/dev/Documents/React/Blenspark/src/assets/pngs/blender1.png";
+
 
 const Card = (props) => {
     const { Icon, disc, title } = props;
   return (
-    <Container>
-        <span className='green'><Icon/></span>
+    <Container className='bg-opacity-50 text-slate-800 '>
+        <img src={header} alt="" />
         <h1>{title}</h1>
-        <p>{disc}</p>
     </Container>
   )
 }
@@ -16,7 +17,6 @@ export default Card;
 
 const Container = styled.div`
     width: 100%;
-    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
     padding: 1rem;
     text-align: center;
     span{
