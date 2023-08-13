@@ -24,7 +24,7 @@ const Services = () => {
             navigation={
               "https://www.behance.net/gallery/171855685/EVATAC-DUFFEL-BAG-3D-ANIMATION"
             }
-            tags={["3D animation", "models", "models", "storytelling"]}
+            tags={["3D animation", "models", "models"]}
           />
         </Slide>
         <Slide direction="up">
