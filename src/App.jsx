@@ -9,8 +9,9 @@ import header from "/home/dev/Documents/React/Blenspark/src/assets/pngs/header.j
 
 function App() {
   return (
-    <Container className="bg-gray-400">
+    <Container className="bg-zinc-800">
       <Banner
+      className="h-[100%]"
         style={{
           background: `url(${header})`,
           backgroundPosition: "center",
@@ -18,10 +19,10 @@ function App() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="bg-black bg-opacity-40">
+        <div className="bg-black bg-opacity-40 h-fit">
           <Header />
         </div>
-        <div className="bg-black bg-opacity-40">
+        <div className="bg-black bg-opacity-40 h-fll">
         <ProfComponent />
         </div>
       </Banner>

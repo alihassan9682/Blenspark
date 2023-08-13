@@ -7,16 +7,6 @@ const ClientSlider = (props) => {
     const {name, position, img_url, stars, disc} = props.item;
   return (
     <Container>
-        <Header>
-            <span className='quote'><IoIosQuote/></span>
-            <div>
-                {Array(stars).fill().map((_, i) => (
-                    <span className='star' key={i}>
-                        <AiOutlineStar/>
-                    </span>
-                ))}
-            </div>
-        </Header>
         <Body>
             {disc}
         </Body>

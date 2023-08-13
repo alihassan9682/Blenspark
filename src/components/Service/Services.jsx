@@ -1,68 +1,75 @@
 import React from "react";
-import { MdDesignServices } from "react-icons/md";
-import { FiCodesandbox } from "react-icons/fi";
-import { CgWebsite } from "react-icons/cg";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
-
+import Bull from "/home/dev/Documents/React/Blenspark/src/assets/pngs/blender1.png";
+import Bag from "/home/dev/Documents/React/Blenspark/src/assets/pngs/3.png";
+import House from "/home/dev/Documents/React/Blenspark/src/assets/pngs/5.png";
 
 const Services = () => {
   return (
     <Container id="service">
       <Slide direction="down">
-        <p className="text-4xl">
-          Our <span className="green">services</span>
+        <p className="text-6xl font-bold">
+          Our <span className="green">3D Services</span>
         </p>
       </Slide>
       <Cards>
         <Slide direction="left">
           <Card
-            Icon={MdDesignServices}
-            title={"3D Product Designs"}
+            img={Bag}
+            title={"Product Designs"}
             disc={`Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            navigation={
+              "https://www.behance.net/gallery/171855685/EVATAC-DUFFEL-BAG-3D-ANIMATION"
+            }
+            tags={["3D animation", "models", "models", "storytelling"]}
           />
-          
         </Slide>
         <Slide direction="up">
           <Card
-            Icon={FiCodesandbox}
-            title={"3D Architechural Designs"}
+            img={House}
+            title={"Architechural Designs"}
             disc={`Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            tags={["3D animation", "models", "models", "storytelling"]}
           />
         </Slide>
         <Slide direction="right">
           <Card
-            Icon={CgWebsite}
-            title={"3D Character Designs"}
+            img={Bag}
+            title={"Character Designs"}
             disc={`Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            tags={["3D animation", "models", "models", "storytelling"]}
           />
         </Slide>
         <Slide direction="left">
           <Card
-            Icon={MdDesignServices}
-            title={"3D Furniture Designs"}
+            img={Bull}
+            title={"Furniture Designs"}
             disc={`Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            tags={["3D animation", "models", "models", "storytelling"]}
           />
         </Slide>
         <Slide direction="up">
           <Card
-            Icon={FiCodesandbox}
-            title={"3D Explainer Videos"}
+            img={Bag}
+            title={"Explainer Videos"}
             disc={`Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            tags={["3D animation", "models", "models", "storytelling"]}
           />
         </Slide>
         <Slide direction="right">
           <Card
-            Icon={CgWebsite}
-            title={"3D Realistic Advertisements"}
+            img={Bag}
+            title={"Realistic Advertisements"}
             disc={`Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            tags={["3D animation", "models", "storytelling"]}
           />
         </Slide>
       </Cards>
