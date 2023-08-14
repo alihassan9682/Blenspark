@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { AiOutlineInstagram, AiFillBehanceSquare } from "react-icons/ai";
+import { AiOutlineInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiUpwork, SiWhatsapp, SiBehance } from "react-icons/si";
 import { TbBrandFiverr } from "react-icons/tb";
@@ -31,88 +31,108 @@ const ProfComponent = () => {
           </div>
           <Social>
             <div className="">
-            <div className="text-5xl mt-8 font-bold">
-          <span className="green">Contact </span>Us
-          </div>
-            <div className="flex flex-wrap gap-3 items-center social-icons transform scale-[150%] ml-12 mt-8">
-              <span>
-                <a
-                  href="https://www.upwork.com/freelancers/~01be627ef25194e660"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="bg-[#01be96]">
-                    <SiUpwork
-                      style={{ width: "90px", height: "50px", padding: "14px" }}
-                    />
-                  </div>
-                </a>
-              </span>
-              <span>
-                <a
-                  href="https://www.upwork.com/freelancers/~01be627ef25194e660"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="bg-[#01be96] -mt-1">
-                    <TbBrandFiverr
-                      style={{ width: "90px", height: "40px", padding: "10px" }}
-                    />
-                  </div>
-                </a>
-              </span>
-              <span>
-                <a
-                  href="https://www.upwork.com/freelancers/~01be627ef25194e660"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="bg-[#01be96] -mt-1">
-                    <SiWhatsapp
-                      style={{ width: "80px", height: "38px", padding: "10px" }}
-                    />
-                  </div>
-                </a>
-              </span>
-              <span>
-                <a
-                  href="https://instagram.com/blenspark?igshid=MzRlODBiNWFlZA=="
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="bg-[#01be96] -mt-1">
-                    <AiOutlineInstagram
-                      style={{ width: "90px", height: "40px", padding: "10px" }}
-                    />
-                  </div>
-                </a>
-              </span>
-              <span>
-                <a
-                  href="https://www.behance.net/_products"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {" "}
-                  <div className="bg-[#01be96] -mt-1">
-                    <SiBehance
-                      style={{ width: "90px", height: "40px", padding: "10px" }}
-                    />
-                  </div>
-                </a>
-              </span>
-              <span>
-                <a
-                  href="https://www.linkedin.com/company/90946761/admin/feed/posts/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="bg-[#01be96] -mt-1">
-                    <FaLinkedinIn />
-                  </div>
-                </a>
-              </span>
-            </div>
+              <div className="text-5xl mt-8 font-bold">
+                <span className="green">Contact </span>Us
+              </div>
+              <div className="flex flex-wrap gap-3 items-center social-icons transform scale-[150%] ml-16 mt-8">
+                <span>
+                  <a
+                    href="https://www.upwork.com/freelancers/~01be627ef25194e660"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="bg-[#01be96]">
+                      <SiUpwork
+                        style={{
+                          width: "90px",
+                          height: "50px",
+                          padding: "14px",
+                        }}
+                      />
+                    </div>
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://www.upwork.com/freelancers/~01be627ef25194e660"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="bg-[#01be96] -mt-1">
+                      <TbBrandFiverr
+                        style={{
+                          width: "90px",
+                          height: "40px",
+                          padding: "10px",
+                        }}
+                      />
+                    </div>
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://www.upwork.com/freelancers/~01be627ef25194e660"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="bg-[#01be96] -mt-1">
+                      <SiWhatsapp
+                        style={{
+                          width: "80px",
+                          height: "38px",
+                          padding: "10px",
+                        }}
+                      />
+                    </div>
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://instagram.com/blenspark?igshid=MzRlODBiNWFlZA=="
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="bg-[#01be96] -mt-1">
+                      <AiOutlineInstagram
+                        style={{
+                          width: "90px",
+                          height: "40px",
+                          padding: "10px",
+                        }}
+                      />
+                    </div>
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://www.behance.net/_products"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <div className="bg-[#01be96] -mt-1">
+                      <SiBehance
+                        style={{
+                          width: "90px",
+                          height: "40px",
+                          padding: "10px",
+                        }}
+                      />
+                    </div>
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://www.linkedin.com/company/90946761/admin/feed/posts/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="bg-[#01be96] -mt-1">
+                      <FaLinkedinIn />
+                    </div>
+                  </a>
+                </span>
+              </div>
             </div>
           </Social>
         </Texts>

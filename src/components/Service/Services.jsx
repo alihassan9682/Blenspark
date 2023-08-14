@@ -2,74 +2,135 @@ import React from "react";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
-import Bull from "/home/dev/Documents/React/Blenspark/src/assets/pngs/blender1.png";
+import Game from "/home/dev/Documents/React/Blenspark/src/assets/pngs/Game.jpeg";
 import Bag from "/home/dev/Documents/React/Blenspark/src/assets/pngs/3.png";
-import House from "/home/dev/Documents/React/Blenspark/src/assets/pngs/5.png";
+import Archetecture from "/home/dev/Documents/React/Blenspark/src/assets/pngs/Archetecture.png";
+import Strive from "/home/dev/Documents/React/Blenspark/src/assets/pngs/product_strive.jpeg";
+import Furniture from "/home/dev/Documents/React/Blenspark/src/assets/pngs/furniture.jpeg";
+import Character from "/home/dev/Documents/React/Blenspark/src/assets/pngs/Character.png";
+import Interior from "/home/dev/Documents/React/Blenspark/src/assets/pngs/Interior.jpeg";
+import Medical from "/home/dev/Documents/React/Blenspark/src/assets/pngs/Medical.jpeg";
+import Explainer from "/home/dev/Documents/React/Blenspark/src/assets/pngs/Explainer.jpeg";
 
 const Services = () => {
   return (
     <Container id="service">
       <Slide direction="down">
-        <p className="text-6xl font-bold">
+        <p className="text-5xl font-bold">
           Our <span className="green">3D Services</span>
         </p>
       </Slide>
       <Cards>
         <Slide direction="left">
           <Card
-            img={Bag}
-            title={"Product Designs"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
-            navigation={
-              "https://www.behance.net/gallery/171855685/EVATAC-DUFFEL-BAG-3D-ANIMATION"
-            }
-            tags={["3D animation", "models", "models"]}
+            img={Strive}
+            title={"Product Designing and Animations"}
+            disc={`Transform your products into stunning 3D visualizations, 
+            capturing every detail and angle.Elevate your brand with immersive experiences.`}
+            navigation={""}
+            tags={[
+              "ProductVisualization",
+              "3DAnimation",
+              "ProductShowcase",
+              "VirtualPrototyping",
+            ]}
           />
         </Slide>
         <Slide direction="up">
           <Card
-            img={House}
-            title={"Architechural Designs"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
-            tags={["3D animation", "models", "models", "storytelling"]}
+            img={Furniture}
+            title={"Furniture Modeling and Showcasing"}
+            disc={`Experience the future of furniture with our mesmerizing 3D design, modeling, and animation. Immerse yourself in functional artistry.`}
+            navigation={""}
+            tags={[
+              "FurnitureDesign",
+              "InteriorInspiration",
+              "3DFurniture",
+              "VirtualFurniture",
+            ]}
           />
         </Slide>
         <Slide direction="right">
           <Card
-            img={Bag}
-            title={"Character Designs"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
-            tags={["3D animation", "models", "models", "storytelling"]}
+            img={Character}
+            title={"Character Designs Animations"}
+            disc={`Unleash imagination through captivating character design and animation. Watch characters come alive in thrilling narratives`}
+            navigation={""}
+            tags={[
+              "CharacterDesign",
+              "AnimationArtistry",
+              "CharacterAnimation",
+              "ImaginaryWorlds",
+            ]}
           />
         </Slide>
         <Slide direction="left">
           <Card
-            img={Bull}
-            title={"Furniture Designs"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
-            tags={["3D animation", "models", "models", "storytelling"]}
+            img={Interior}
+            title={"Interior Designs and Showcasing"}
+            disc={`Elevate interiors with our exquisite 3D design, transforming spaces into captivating visual stories. Step into innovation`}
+            navigation={""}
+            tags={[
+              "InteriorDesign",
+              "3DInteriors",
+              "VirtualSpaces",
+              "InteriorInspiration",
+            ]}
           />
         </Slide>
-        <Slide direction="up">
+        <Slide direction="left">
           <Card
-            img={Bag}
+            img={Explainer}
             title={"Explainer Videos"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
-            tags={["3D animation", "models", "models", "storytelling"]}
+            disc={`Unlock the power of clarity through dynamic explainer videos. Simplify the complex and engage your audience seamlessly`}
+            navigation={""}
+            tags={[
+              "ExplainerVideos",
+              "VisualCommunication",
+              "StorytellingMagic",
+              "EngageAndEducate",
+            ]}
+          />
+        </Slide>
+        <Slide direction="down">
+          <Card
+            img={Medical}
+            title={"Medical Animations"}
+            disc={`Journey inside the human body through mesmerizing medical animations. Visualize the unseen for education and innovation`}
+            navigation={""}
+            tags={[
+              "HealthcareVisualization",
+              "AnatomyExploration",
+              "InnovateMedicine",
+            ]}
           />
         </Slide>
         <Slide direction="right">
           <Card
-            img={Bag}
-            title={"Realistic Advertisements"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
-            tags={["3D animation", "models", "storytelling"]}
+            img={Archetecture}
+            title={"Archetectural Designs"}
+            disc={`Transform blueprints into breathtaking reality with our 3D architectural designs. Redefine spaces and envision the extraordinary`}
+            navigation={""}
+            tags={[
+              "DesignIngenuity",
+              "SpaceTransformation",
+              "BuildingDreams",
+              "3DArchitecture",
+            ]}
+          />
+        </Slide>
+        <Slide direction="down">
+          <Card
+            img={Game}
+            title={"Game Ready Assets"}
+            disc={`Level up your gaming world with meticulously crafted, game-ready assets from characters to assets to 3d realistic environments`}
+            navigation={""}
+            tags={[
+              "GameReadyAssets",
+              "DigitalAdventures",
+              "ImmersiveGaming",
+              "GamingVisuals",
+            ]}
           />
         </Slide>
       </Cards>
