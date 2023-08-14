@@ -32,19 +32,19 @@ const ProfComponent = () => {
           </div>
           <Social>
             <div className="">
-              <div className="text-5xl mt-8 font-bold flex flex-col">
-                <div>
+              <div className="text-5xl mt-8 mb-4 font-bold flex flex-col">
+                <div className="mb-2">
                   <span className="green">Contact </span>Us
                 </div>
                 <div>
                 <ReactWhatsapp
                   number="+923004695178"
-                  className="rounded -mt-6 mb-2"
+                  className="rounded-full !-mt-2 mb-2"
                 >
                   <div className="bg-[#01be96]">
                     <SiWhatsapp
                       style={{
-                        width: "70px",
+                        width: "210px",
                         height: "30px",
                         padding: "2px",
                       }}
@@ -53,7 +53,7 @@ const ProfComponent = () => {
                 </ReactWhatsapp>
                 </div>
               </div>
-              <div className="flex flex-wrap gap-3 items-center social-icons transform scale-[150%] ml-16 mt-8">
+              <div className="flex flex-wrap gap-3 items-center social-icons transform scale-[150%] ml-16 mt-12">
                 <span>
                   <a
                     href="https://www.upwork.com/freelancers/~01be627ef25194e660"
