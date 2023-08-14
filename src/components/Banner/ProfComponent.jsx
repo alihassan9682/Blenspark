@@ -6,6 +6,7 @@ import { SiUpwork, SiWhatsapp, SiBehance } from "react-icons/si";
 import { TbBrandFiverr } from "react-icons/tb";
 import { Slide } from "react-awesome-reveal";
 import BlenSpark from "/home/dev/Documents/React/Blenspark/src/assets/pngs/BlenSpark.png";
+import ReactWhatsapp from "react-whatsapp";
 
 const ProfComponent = () => {
   return (
@@ -31,8 +32,26 @@ const ProfComponent = () => {
           </div>
           <Social>
             <div className="">
-              <div className="text-5xl mt-8 font-bold">
-                <span className="green">Contact </span>Us
+              <div className="text-5xl mt-8 font-bold flex flex-col">
+                <div>
+                  <span className="green">Contact </span>Us
+                </div>
+                <div>
+                <ReactWhatsapp
+                  number="+923004695178"
+                  className="rounded -mt-6 mb-2"
+                >
+                  <div className="bg-[#01be96]">
+                    <SiWhatsapp
+                      style={{
+                        width: "70px",
+                        height: "30px",
+                        padding: "2px",
+                      }}
+                    />
+                  </div>
+                </ReactWhatsapp>
+                </div>
               </div>
               <div className="flex flex-wrap gap-3 items-center social-icons transform scale-[150%] ml-16 mt-8">
                 <span>
@@ -63,23 +82,6 @@ const ProfComponent = () => {
                         style={{
                           width: "90px",
                           height: "40px",
-                          padding: "10px",
-                        }}
-                      />
-                    </div>
-                  </a>
-                </span>
-                <span>
-                  <a
-                    href="https://www.upwork.com/freelancers/~01be627ef25194e660"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="bg-[#01be96] -mt-1">
-                      <SiWhatsapp
-                        style={{
-                          width: "80px",
-                          height: "38px",
                           padding: "10px",
                         }}
                       />

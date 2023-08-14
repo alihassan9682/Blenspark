@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
 import Game from "/home/dev/Documents/React/Blenspark/src/assets/pngs/Game.jpeg";
-import Bag from "/home/dev/Documents/React/Blenspark/src/assets/pngs/3.png";
 import Archetecture from "/home/dev/Documents/React/Blenspark/src/assets/pngs/Archetecture.png";
 import Strive from "/home/dev/Documents/React/Blenspark/src/assets/pngs/product_strive.jpeg";
 import Furniture from "/home/dev/Documents/React/Blenspark/src/assets/pngs/furniture.jpeg";
