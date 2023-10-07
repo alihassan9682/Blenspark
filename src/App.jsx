@@ -32,7 +32,7 @@ function App() {
 
       <Clients />
 
-      {/* <Footer /> */}
+      <Footer />
     </Container>
   );
 }
