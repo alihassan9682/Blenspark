@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Slide } from "react-awesome-reveal";
-import BlenSpark from "/home/dev/Documents/React/Blenspark/src/assets/pngs/logo.png";
 
 const Footer = () => {
   const form = useRef();
@@ -39,10 +38,10 @@ const Footer = () => {
       className="bg-zinc-800 w-full px-3 flex flex-col md:flex-row"
     >
       {/* Left Section */}
-      <div className="py-6 w-full md:w-1/2">
+      <div className="py-6 w-full">
         <div className="bg-white p-8 flex flex-col">
           <span className="-mt-4 mb-4 flex flex-col">
-            <span className="text-amber-600 text-4xl font-extrabold">
+            <span className="text-amber-600 text-5xl font-extrabold">
               Contact Us
             </span>
             <span className="text-gray-500">
@@ -103,10 +102,10 @@ const Footer = () => {
       </div>
 
       {/* Right Section */}
-      <Slide direction="down" className="w-full md:w-1/2">
+      <Slide direction="down" className="w-full md:w-[30%]">
         <div className="bg-[#01be96] flex flex-col items-center p-4 h-full">
           <div className="text-6xl font-bold p-2">Let'sTalk</div>
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col p-4 items-start">
           <div className="flex mt-4">
           <span className="fill-white">
                 <svg
@@ -118,7 +117,7 @@ const Footer = () => {
                   <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" />
                 </svg>
               </span>
-              <span className="ml-2">infor@blenspark.com</span>
+              <span className="ml-2">info@blenspark.com</span>
           </div>
           <div className="flex mt-4">
           <span className="fill-white">
@@ -149,7 +148,6 @@ const Footer = () => {
               </span>
           </div>
           </div>
-          
         </div>
       </Slide>
     </div>

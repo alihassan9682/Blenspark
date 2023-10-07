@@ -37,20 +37,20 @@ const ProfComponent = () => {
                   <span className="green">Contact </span>Us
                 </div>
                 <div>
-                <ReactWhatsapp
-                  number="+923004695178"
-                  className="rounded-full !-mt-2 mb-2"
-                >
-                  <div className="bg-[#01be96]">
-                    <SiWhatsapp
-                      style={{
-                        width: "210px",
-                        height: "30px",
-                        padding: "2px",
-                      }}
-                    />
-                  </div>
-                </ReactWhatsapp>
+                  <ReactWhatsapp
+                    number="+923004695178"
+                    className="rounded-full !-mt-2 mb-2"
+                  >
+                    <div className="bg-[#01be96]">
+                      <SiWhatsapp
+                        style={{
+                          width: "210px",
+                          height: "30px",
+                          padding: "2px",
+                        }}
+                      />
+                    </div>
+                  </ReactWhatsapp>
                 </div>
               </div>
               <div className="flex flex-wrap gap-3 items-center social-icons transform scale-[150%] ml-16 mt-12">
@@ -73,7 +73,7 @@ const ProfComponent = () => {
                 </span>
                 <span>
                   <a
-                    href="https://www.upwork.com/freelancers/~01be627ef25194e660"
+                    href="https://www.fiverr.com/pixelstudioa/do-perfect-3d-modeling-and-animations?context_referrer=user_page&ref_ctx_id=a34a965e0d25f12ae5a6765a57b8e185&pckg_id=1&pos=1&seller_online=true&imp_id=2b2222c9-c86a-4718-9d8f-cbc7807e855c0"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -107,7 +107,7 @@ const ProfComponent = () => {
                 </span>
                 <span>
                   <a
-                    href="https://www.behance.net/_products"
+                    href="https://www.behance.net/Blensparkproducts"
                     target="_blank"
                     rel="noreferrer"
                   >
