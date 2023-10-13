@@ -111,11 +111,11 @@ const ProfComponent = () => {
                     {" "}
                     <div className="bg-[#01be96] -mt-1">
                       <SiBehance
-                        style={{
-                          width: "90px",
-                          height: "40px",
-                          padding: "10px",
-                        }}
+                          style={{
+                            width: "90px",
+                            height: "40px",
+                            padding: "10px",
+                          }}
                       />
                     </div>
                   </a>
