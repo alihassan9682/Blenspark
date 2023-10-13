@@ -1,83 +1,24 @@
 import React from "react";
-import styled from "styled-components";
-import { IoIosQuote } from "react-icons/io";
-import { AiOutlineStar } from "react-icons/ai";
-
 
 const ClientSlider = (props) => {
-  const { name, position, img_url, stars, disc } = props.item;
-  
+  const { name, position, img_url, disc } = props.item;
   return (
-    <div>
-    <div class={`${img_url} flex flex-col justify-end bg-cover grayscale-[100%] rounded-t-xl bg h-96 w-72`}> 
-      <div class="p-6 bg-white opacity-40 rounded-t-3xl">
-        <div class="mb-2 text-3xl text-[#01be96] font-medium text-opacity-100">
-        {position}
+    <div className="justify-center px-3">
+      <div
+        class={`${img_url} flex flex-col bg-white justify-end  bg-cover rounded-t-xl bg h-96`}
+      >
+        <div class="p-6 bg-black bg-opacity-70 rounded-t-3xl ">
+          <div class="text-base text-lime-100  font-medium bg-opacity-100">
+            {name}
+          </div>
+          <div class="text-2xl text-orange-200 font-bold bg-opacity-100">
+            {position}
+          </div>
+          <p class="mb-2 text-sm text-opacity-100">{disc}</p>
         </div>
-        <p class="mb-2 text-base text-[#01be96]">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
       </div>
-    </div>
     </div>
   );
 };
 
 export default ClientSlider;
-
-const Container = styled.div`
-  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
-  padding: 1.5rem 1rem;
-  margin: 0 1rem;
-`;
-
-const Header = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  .quote {
-    font-size: 3rem;
-    color: #01be96;
-    opacity: 0.7;
-  }
-
-  .star {
-    color: #ffcd3c;
-    font-size: 1.3rem;
-  }
-`;
-const Body = styled.p`
-  font-size: 0.8rem;
-  margin-bottom: 1.5rem;
-`;
-const Footer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  img {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50px;
-    object-fit: cover;
-  }
-
-  h1 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    @media (max-width: 580px) {
-      font-size: 1rem;
-    }
-    @media (max-width: 538px) {
-      font-size: 0.9rem;
-    }
-  }
-
-  p {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.5);
-    @media (max-width: 538px) {
-      font-size: 0.6rem;
-    }
-  }
-`;

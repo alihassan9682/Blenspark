@@ -3,58 +3,59 @@ import Slider from "react-slick";
 import styled from "styled-components";
 import ClientSlider from "./ClientSlider";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { Slide } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 let clients = [
   {
-    name: "John Michel",
-    position: "web developer",
-    img_url: 'bg-[url(/home/dev/Documents/React/Blenspark/src/assets/pngs/Ali.jpg)]',
+    name: "Ali Hassan",
+    position: "Web Developer",
+    img_url:
+      "bg-[url(/home/dev/Documents/React/Blenspark/src/assets/pngs/Ali.png)]",
     stars: 3,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+    disc: `I sculpt the digital universe, creating online wonders that captivate and inspire.`,
   },
   {
-    name: "John Michel",
-    position: "web developer",
-    img_url: 'bg-[url(/home/dev/Documents/React/Blenspark/src/assets/pngs/Ali.jpg)]',
+    name: "Farrukh Arshad",
+    position: "Senior 3D Artist",
+    img_url:
+      "bg-[url(/home/dev/Documents/React/Blenspark/src/assets/pngs/farrukh.jpeg)]",
     stars: 4,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+    disc: `I mold virtual realms, bringing imagination to life in the third dimension.`,
   },
   {
-    name: "John Michel",
-    position: "web developer",
-    img_url: 'bg-[url(/home/dev/Documents/React/Blenspark/src/assets/pngs/Ali.jpg)]',
+    name: "Ali Zaman",
+    position: "Animation Specialist",
+    img_url:
+      "bg-[url(/home/dev/Documents/React/Blenspark/src/assets/pngs/zaman.jpeg)]",
     stars: 5,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+    disc: `I infuse motion into dreams, bringing characters and stories to life with every frame.`,
   },
   {
-    name: "John Michel",
-    position: "web developer",
-    img_url: 'bg-[url(/home/dev/Documents/React/Blenspark/src/assets/pngs/Ali.jpg)]',
+    name: "Ahmad Nasir",
+    position: "Senior Texturing Artist",
+    img_url:
+      "bg-[url(/home/dev/Documents/React/Blenspark/src/assets/pngs/Ahmed.jpeg)]",
     stars: 5,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+    disc: `I breathe life into the canvas of 3D worlds, adding depth and beauty with every stroke.`,
   },
   {
-    name: "John Michel",
-    position: "web developer",
-    img_url: 'bg-[url(/home/dev/Documents/React/Blenspark/src/assets/pngs/Ali.jpg)]',
+    name: "Bilal Nasir",
+    position: "Graphics Specialist",
+    img_url:
+      "bg-[url(/home/dev/Documents/React/Blenspark/src/assets/pngs/bilal.jpeg)]",
     stars: 5,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+    disc: `I sculpt immersive digital worlds, where creativity knows no boundaries`,
   },
   {
-    name: "John Michel",
-    position: "web developer",
-    img_url: 'bg-[url(/home/dev/Documents/React/Blenspark/src/assets/pngs/Ali.jpg)]',
+    name: "Muhammad Akram",
+    position: "3D Developer",
+    img_url:
+      "bg-[url(/home/dev/Documents/React/Blenspark/src/assets/pngs/ikram.png)]",
     stars: 5,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+    disc: `As a 3D developer, I shape limitless virtual worlds.`,
   },
 ];
+
 var settings = {
   dots: true,
   infinite: true,
@@ -97,9 +98,14 @@ const Clients = () => {
   clientDisc = clients.map((item, i) => <ClientSlider item={item} key={i} />);
   return (
     <Container id="client">
-      <Slide direction="left">
-        <span className="green text-4xl ">Sparkers</span>
-      </Slide>
+      <Zoom>
+        <div className="flex flex-col items-center">
+          <span className="green text-5xl">Sparkers</span>
+          <p className="text-center">
+            Let's meet our highly skilled Artists and learn more about their <br/> expertise and experiences in various fields.
+          </p>
+        </div>
+      </Zoom>
       <Testimonials>
         <Slider ref={arrowRef} {...settings}>
           {clientDisc}
@@ -139,49 +145,22 @@ const Container = styled.div`
     text-transform: capitalize;
   }
 
-  .slick-list,
-  .slick-slider,
-  .slick-track {
-    padding: 0;
-  }
-
-  .slick-dots {
-    text-align: left;
-    margin-left: 1rem;
-  }
-
-  .slick-dots li button:before {
-    content: "";
-  }
-
-  .slick-dots li button {
-    width: 9px;
-    height: 4px;
-    background: linear-gradient(
-      159deg,
-      rgb(45, 45, 58) 0%,
-      rgb(43, 43, 53) 100%
-    );
-    padding: 0.1rem;
-    margin-top: 1rem;
-    transition: all 400ms ease-in-out;
-    border-radius: 50px;
-  }
-
-  .slick-dots li.slick-active button {
-    background: #01be96;
-    width: 15px;
-  }
-
-  .slick-dots li {
-    margin: 0;
+  /* Responsive styling for smaller screens */
+  @media (max-width: 600px) {
+    padding: 2rem 0;
   }
 `;
 
 const Testimonials = styled.div`
   margin-top: 2rem;
   position: relative;
+
+  /* Responsive styling for smaller screens */
+  @media (max-width: 600px) {
+    margin-top: 1rem;
+  }
 `;
+
 const Buttons = styled.div`
   position: absolute;
   right: 0.7rem;
@@ -199,4 +178,13 @@ const Buttons = styled.div`
   @media (max-width: 530px) {
     display: none;
   }
-`;
+
+  /* Responsive styling for smaller screens */
+  @media (max-width: 600px) {
+    right: 0.3rem;
+    bottom: -1rem;
+    button {
+      font-size: 1rem;
+    }
+ }
+}`;
