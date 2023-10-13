@@ -57,13 +57,13 @@ let clients = [
 ];
 
 var settings = {
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 500,
   slidesToShow: 4,
   slidesToScroll: 1,
   initialSlide: 0,
-  arrows: false,
+  arrows: true,
   responsive: [
     {
       breakpoint: 990,
@@ -71,7 +71,7 @@ var settings = {
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
-        dots: true,
+        dots: false,
       },
     },
     {
@@ -110,14 +110,14 @@ const Clients = () => {
         <Slider ref={arrowRef} {...settings}>
           {clientDisc}
         </Slider>
-        <Buttons>
+        {/* <Buttons>
           <button onClick={() => arrowRef.current.slickPrev()}>
             <IoIosArrowBack />
           </button>
           <button onClick={() => arrowRef.current.slickNext()}>
             <IoIosArrowForward />
           </button>
-        </Buttons>
+        </Buttons> */}
       </Testimonials>
     </Container>
   );
