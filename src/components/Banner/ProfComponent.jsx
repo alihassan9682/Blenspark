@@ -13,21 +13,18 @@ const ProfComponent = () => {
     <Container id="home" className="h-fit">
       <Slide direction="left" className="w-[90%]">
         <Texts>
-          <div className="text-4xl mt-8">
-            Hello <span className="green">We are</span>
+          <div className="text-4xl mt-8 ">
+            Welcome <span className="text-white">to</span>
           </div>
-          <div className="text-8xl font-bold mt-2 mb-2 md:text-6xl xs:text-6xl">
+          <div className="text-8xl font-bold mt-2 mb-2 md:text-6xl xs:text-6xl green">
             BlenSpark
           </div>
           <h3>3D Visualization Services Providers</h3>
           <div className="font-sans text-2xl mt-4 sm:hidden lg:contents xs:hidden md:hidden">
             <p>
-              Blenspark is a leading provider of cutting-edge 3D visualization
-              services. Our company specializes in transforming ideas and
-              concepts into stunning, realistic visual representations. With a
-              team of skilled designers and state-of-the-art technology, we
-              bring designs to life, allowing clients to visualize their
-              projects in a captivating and immersive manner.
+            Blenspark is a prominent provider of advanced 3D visualization services,
+            specializing in converting concepts into lifelike visual representations. 
+            Our expert designers and cutting-edge technology create immersive, captivating project visualizations.
             </p>
           </div>
           <Social>
